@@ -3,6 +3,6 @@
 </div>
 
 # Slides
-Slides are [here](https://github.com/christianschuler8989/ChristianSchuler-Research/-/jobs/artifacts/main/browse?job=slides). 
+Slides are [here](https://github.com/christianschuler8989/ChristianSchuler-Research/blob/gh-pages/presentation.pdf). 
 
 
