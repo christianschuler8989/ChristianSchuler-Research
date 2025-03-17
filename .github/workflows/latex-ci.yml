@@ -16,6 +16,7 @@ jobs:
         uses: dante-ev/latex-action@2021-A
         with:
           root_file: Slides-2025-MTACR/presentation.tex
+          working_directory: Slides-2025-MTACR/
           compiler: latexmk
           args: -pdf -file-line-error -interaction=nonstopmode
 
