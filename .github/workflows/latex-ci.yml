@@ -20,7 +20,7 @@ jobs:
           args: -pdf -file-line-error -interaction=nonstopmode
 
       - name: Upload PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: PDF
           path: Slides-2025-MTACR/presentation.pdf
