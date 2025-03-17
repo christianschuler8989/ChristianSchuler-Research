@@ -1,5 +1,5 @@
 image: texlive/texlive:latest
-
+on: [push]
 .latex:
   tags: 
     - tex
