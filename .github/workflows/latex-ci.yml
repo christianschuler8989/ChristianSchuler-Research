@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write  # Required for pushing to gh-pages
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -36,4 +39,6 @@ jobs:
           git add presentation.pdf
           git commit -m "Update PDF"
           git push -f origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
