@@ -231,6 +231,19 @@
 
 \begin{frame}[fragile]
 	\frametitle{Our Goal \& Our Enemies}
+	\begin{minipage}{.49\textwidth}
+    \begin{figure}
+	    \centering
+	    \includegraphics[width=1.0\textwidth]{images/title-banner.png}
+	\end{figure}
+	\end{minipage}
+	\begin{minipage}{.49\textwidth}
+	\begin{enumerate}
+		\item Time
+		\item Bureaucracy
+		\item Expert translators (?!)
+	\end{enumerate}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -474,6 +487,33 @@
     \end{itemize}
 \end{frame}
 
+
+\begin{frame}[fragile]
+	\frametitle{Issue with Funding? Or Issue with Bureaucracy?}
+    \begin{minipage}{.50\textwidth}
+        \centering
+        \begin{itemize}
+            \item \textbf{Regarding Translators}
+            \begin{itemize}
+                \item Contracts: UHH students only!
+                \item Okay, non-students too...
+                \item Okay, even Germany-wide...
+                \item Okay, Fiverr is allowed- \\ but we don't pay, only reimburse!
+            \end{itemize}
+            \item \textbf{Regarding Annotators}
+            \begin{itemize}
+                \item Only option: Amazon.com voucher
+            \end{itemize}
+        \end{itemize}
+    \end{minipage}%
+    \begin{minipage}{.50\textwidth}
+    \centering
+        \begin{figure}
+            \includegraphics[width=1.0\textwidth]{images/MTACR-Overview.png} 
+        \end{figure}
+    \end{minipage}
+\end{frame}
+
 \begin{frame}[fragile]
 	\frametitle{The Story of the Unloved TXT-Template}
     \centering
@@ -601,32 +641,6 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-	\frametitle{Issue with Funding? → Bureaucracy}
-    \begin{minipage}{.50\textwidth}
-        \centering
-        \begin{itemize}
-            \item \textbf{Regarding Translators}
-            \begin{itemize}
-                \item Contracts with students at UHH only!
-                \item Okay, maybe non-students too, but only from Hamburg!
-                \item Okay, maybe Germany-wide...
-                \item Okay, you can use Fiverr- but we don't pay, only reimburse!
-            \end{itemize}
-            \item \textbf{Regarding Annotators}
-            \begin{itemize}
-                \item Amazon.com voucher as only option
-            \end{itemize}
-        \end{itemize}
-    \end{minipage}%
-    \begin{minipage}{.50\textwidth}
-    \centering
-        \begin{figure}
-            \includegraphics[width=1.0\textwidth]{images/MTACR-Overview.png} 
-        \end{figure}
-    \end{minipage}
-\end{frame}
-
 \section{Corpus Data\&Evaluation}
 
 \begin{frame}[fragile]
@@ -635,10 +649,10 @@
     \hfill\begin{figure}
         \begin{overprint}
         \centering
-            \onslide<1> \includegraphics[height=6.3cm]{images/mtacr-2024-april.png} 
-            \onslide<2> \includegraphics[height=6.3cm]{images/mtacr-2024-april-targets.png} 
-            \onslide<3> \includegraphics[height=6.3cm]{images/mtacr-2024-april-targets.png}  
-            \onslide<4> \includegraphics[height=6.3cm]{images/mtacr-2024-april-all.png} 
+            \onslide<1> \includegraphics[height=6.6cm]{images/mtacr-2024-april.png} 
+            \onslide<2> \includegraphics[height=6.6cm]{images/mtacr-2024-april-targets.png} 
+            \onslide<3> \includegraphics[height=6.6cm]{images/mtacr-2024-april-noeng.png}  
+            \onslide<4> \includegraphics[height=6.6cm]{images/mtacr-2024-april-all.png} 
         \end{overprint}
         
     \end{figure}
@@ -693,7 +707,7 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Corpus Statistics (MT)}
+	\frametitle{Corpus Statistics (NLLB-based Data - MT in Detail)}
     \begin{figure}
     \centering
         \includegraphics[width=1.0\textwidth]{images/MTACR-Total_sentences_for_each_translation_system_and_language.png} 
@@ -701,39 +715,59 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Machine Translation Versus Human Translation I}
-    \begin{minipage}{.50\textwidth}
+	\frametitle{MT Versus Humans I - BLEU}
+    \begin{minipage}{.33\textwidth}
     \begin{figure}
         \centering
         \includegraphics[width=1.0\textwidth]{images/eval-01-Chinese-Anchors-bleu.png} 
     \end{figure}
     \end{minipage}%
-    \begin{minipage}{.50\textwidth}
+    \begin{minipage}{.33\textwidth}
     \begin{figure}
         \centering
         \includegraphics[width=1.0\textwidth]{images/eval-01-Vietnamese-Anchors-bleu.png} 
     \end{figure}
-    \end{minipage}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Machine Translation Versus Human Translation II}
-    \begin{minipage}{.50\textwidth}
+    \end{minipage}%
+        \begin{minipage}{.33\textwidth}
     \begin{figure}
         \centering
         \includegraphics[width=1.0\textwidth]{images/eval-01-Morisien-Anchors-bleu.png} 
     \end{figure}
-    \end{minipage}%
-    \begin{minipage}{.50\textwidth}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{MT Versus Humans II - Chinese}
+    \begin{minipage}{1.0\textwidth}
     \begin{figure}
         \centering
-        \includegraphics[width=1.0\textwidth]{images/eval-01-Kurmanji-Anchors-bleu.png} 
+        \includegraphics[width=1.0\textwidth]{images/eval-01-Chinese-Anchors.png} 
     \end{figure}
     \end{minipage}
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Cross-lingual Alignments}
+	\frametitle{MT Versus Humans III - Vietnamese}
+    \begin{minipage}{1.0\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/eval-01-Vietnamese-Anchors.png} 
+    \end{figure}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{MT Versus Humans IV - Morisien}
+    \begin{minipage}{1.0\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/eval-01-Morisien-Anchors.png} 
+    \end{figure}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Cross-lingual Aligned Words}
     \begin{figure}
         \centering
         \includegraphics[width=0.8\textwidth]{images/TextAsCorpusRep-Concept-TextAlignmentsOverviewTable.png} 
@@ -741,6 +775,59 @@
 \end{frame}
 
 \section{Next Steps}
+
+
+\begin{frame}[fragile]
+	\frametitle{Language Ambiguity}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentExample.png} 
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Language Ambiguity a Limitation?}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentLimitation.png} 
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Language Ambiguity a Potential?}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentLimitationExample.png} 
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Bilingual Lexicon Induction}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/ChameleonMT-BLI-BLI.png}
+        \caption{Inspiration for this figure: (Wang et al., 2021) and (Irvine and Callison-Burch, 2017).}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]
+	\frametitle{Dialect Filters - Dialect (Multi-)Labels}
+    \begin{minipage}{.50\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/DialectFilters-Overview.png} 
+    \end{figure}
+    \end{minipage}%
+    \begin{minipage}{.50\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/DialectFilters-PipelineOverview.png} 
+    \end{figure}
+    \end{minipage}
+\end{frame}
+
+
 
 \begin{frame}[fragile]
 	\frametitle{MTACR's Future (Short-Term) - Improve \& Enhance I}
@@ -846,54 +933,6 @@
 \end{frame}
 
 
-\begin{frame}[fragile]
-	\frametitle{Dialect Filters - Dialect (Multi-)Labels}
-    \begin{minipage}{.50\textwidth}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/DialectFilters-Overview.png} 
-    \end{figure}
-    \end{minipage}%
-    \begin{minipage}{.50\textwidth}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/DialectFilters-PipelineOverview.png} 
-    \end{figure}
-    \end{minipage}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Language Ambiguity}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentExample.png} 
-    \end{figure}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Language Ambiguity a Limitation?}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentLimitation.png} 
-    \end{figure}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Language Ambiguity a Potential?}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentLimitationExample.png} 
-    \end{figure}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Bilingual Lexicon Induction}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.8\textwidth]{images/ChameleonMT-BLI-BLI.png}
-        \caption{Inspiration for this figure: (Wang et al., 2021) and (Irvine and Callison-Burch, 2017).}
-    \end{figure}
-\end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{La Ende}
@@ -901,7 +940,7 @@
 \end{frame}
 
 
-\section{References}
+%\section{References}
 \begin{frame}[allowframebreaks, fragile]
 	\frametitle{References}
 	% \bibliographystyle{alpha}
