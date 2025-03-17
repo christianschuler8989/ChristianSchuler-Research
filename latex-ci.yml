@@ -1,0 +1,22 @@
+image: texlive/texlive:latest
+
+.latex:
+  tags: 
+    - tex
+  stage: build
+  script:
+    - latexmk -pdf
+  artifacts:
+    expire_in: 8 week
+    name: ${CI_JOB_NAME}-${CI_COMMIT_SHA:0:8}
+    paths:
+      - "*.pdf"
+    when: always
+
+slides:
+   extends: .latex
+   before_script:
+    - 'cd Slides-2025-MTACR/'
+   after_script:
+    - 'cp Slides-2025-MTACR/*.pdf .'
+
