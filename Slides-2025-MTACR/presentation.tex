@@ -214,6 +214,7 @@
     \begin{figure}
         \centering
         \subfloat[]{\includegraphics[height=1.5cm]{images/TextAsCorpusRep-Auxiliary-Logo.png}}\\
+        Multilingual Text As Corpus Repository\\
         \subfloat[Christian Schuler]{\includegraphics[height=2cm]{images/Christian_Schuler_Energydrink.jpg}}\hfill
         \subfloat[Tramy Thi Tran]{\includegraphics[height=2cm]{images/Tramy_Thi_Tran.jpeg}}\hfill
         \subfloat[Deepesha Saurty]{\includegraphics[height=2cm]{images/Deepesha_Saurty.jpg}}\hfill
@@ -227,6 +228,14 @@
         \subfloat[]{\includegraphics[width=2cm]{images/haw-logo.png}}\hfill
         \subfloat[]{\includegraphics[width=2cm]{images/uhh-logo.png}}\hfill
     \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Translation Systems (Here Google Translate) Failing Languages}
+    \begin{figure}
+	    \centering
+	    \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-MotivationSimpleMore.png}
+	\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -246,29 +255,8 @@
 	\end{minipage}
 \end{frame}
 
-\begin{frame}[fragile]
-	\frametitle{Translation Systems (Here Google Translate) Failing Languages}
-    \begin{figure}
-	    \centering
-	    \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-MotivationSimpleMore.png}
-	\end{figure}
-\end{frame}
 
 \section{Focus Languages}
-
-\begin{frame}[fragile]
-	\frametitle{Language Data waiting to be collected}
-    \begin{figure}
-	    \centering
-	    \includegraphics[width=0.33\textwidth]{images/Kurmanjî-wordcloud.png}%
-        \includegraphics[width=0.33\textwidth]{images/Morisien-wordcloud.png}%
-        \includegraphics[width=0.33\textwidth]{images/Vietnamese-wordcloud.png}
-        \\
-        \includegraphics[width=0.33\textwidth]{images/Chinese-wordcloud.png}%
-        \includegraphics[width=0.33\textwidth]{images/German-wordcloud.png}%
-        \includegraphics[width=0.33\textwidth]{images/English-wordcloud.png}
-	\end{figure}
-\end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{Mauritian Creole}
@@ -389,6 +377,20 @@
     \end{minipage}
 \end{frame}
 
+\begin{frame}[fragile]
+	\frametitle{Language Data waiting to be collected}
+    \begin{figure}
+	    \centering
+	    \includegraphics[width=0.33\textwidth]{images/Kurmanjî-wordcloud.png}%
+        \includegraphics[width=0.33\textwidth]{images/Morisien-wordcloud.png}%
+        \includegraphics[width=0.33\textwidth]{images/Vietnamese-wordcloud.png}
+        \\
+        \includegraphics[width=0.33\textwidth]{images/Chinese-wordcloud.png}%
+        \includegraphics[width=0.33\textwidth]{images/German-wordcloud.png}%
+        \includegraphics[width=0.33\textwidth]{images/English-wordcloud.png}
+	\end{figure}
+\end{frame}
+
 
 \section{Methods\&Data Quality}
 
@@ -484,13 +486,15 @@
         \item Lack of basic NLP-tools
         \item Juggling multiple writing systems
         \item Rare translators and annotators
+        \item Many file formats for text corpora
+        \item Minimum wage across continents
     \end{itemize}
 \end{frame}
 
 
 \begin{frame}[fragile]
 	\frametitle{Issue with Funding? Or Issue with Bureaucracy?}
-    \begin{minipage}{.40\textwidth}
+    \begin{minipage}{.45\textwidth}
         \centering
         \begin{itemize}
             \item \textbf{Regarding Translators}
@@ -506,7 +510,7 @@
             \end{itemize}
         \end{itemize}
     \end{minipage}%
-    \begin{minipage}{.60\textwidth}
+    \begin{minipage}{.55\textwidth}
     \centering
         \begin{figure}
             \includegraphics[width=1.0\textwidth]{images/MTACR-Overview.png} 
@@ -778,30 +782,6 @@
 
 
 \begin{frame}[fragile]
-	\frametitle{Language Ambiguity}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentExample.png} 
-    \end{figure}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Language Ambiguity a Limitation?}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentLimitation.png} 
-    \end{figure}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{Language Ambiguity a Potential?}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentLimitationExample.png} 
-    \end{figure}
-\end{frame}
-
-\begin{frame}[fragile]
 	\frametitle{Bilingual Lexicon Induction}
     \begin{figure}
         \centering
@@ -957,8 +937,41 @@
 
 \section{Appendix}
 
+
 \begin{frame}[fragile]
-	\frametitle{Example I: NLLB-0001}
+	\frametitle{Example I: Flickr30k-0001}
+    \begin{minipage}{.50\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/13651137.jpg} 
+    \end{figure}
+    \end{minipage}%
+    \begin{minipage}{.50\textwidth}
+    \includegraphics[width=\textwidth]{images/example-flikr-1.png}
+    % \textbf{Kobani}
+    % \begin{itemize}
+    %     \item "mêrkek bi kombrêsê erdê xerab dikê"
+    % \end{itemize}
+    % \textbf{Morisien}
+    % \begin{itemize}
+    %     \item "enn missier p craze simin avec so machine craz roche"
+    % \end{itemize}
+    % \textbf{Vietnamese}
+    % \begin{itemize}
+    %     \item "Một công nhân xây dựng đang làm việc với một búa khoan."
+    %     \item "Anh ấy đang phá dỡ đường"
+    % \end{itemize}
+    % \textbf{Chinese}
+    % \begin{itemize}
+    %     \begin{CJK*}{UTF8}{gbsn}
+    %     \item "一名工人正在拆除房屋前面的水泥路面"
+    %     \clearpage\end{CJK*}
+    % \end{itemize}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Example II: NLLB-0001}
     \includegraphics[width=\textwidth]{images/example-nllb-1.png}
     % \textbf{English}
     % \begin{itemize}
@@ -990,37 +1003,32 @@
     % \end{itemize}
 \end{frame}
 
+
+
 \begin{frame}[fragile]
-	\frametitle{Example II: Flickr30k-0001}
-    \begin{minipage}{.50\textwidth}
+	\frametitle{Language Ambiguity}
     \begin{figure}
         \centering
-        \includegraphics[width=1.0\textwidth]{images/13651137.jpg} 
+        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentExample.png} 
     \end{figure}
-    \end{minipage}%
-    \begin{minipage}{.50\textwidth}
-    \includegraphics[width=\textwidth]{images/example-flikr-1.png}
-    % \textbf{Kobani}
-    % \begin{itemize}
-    %     \item "mêrkek bi kombrêsê erdê xerab dikê"
-    % \end{itemize}
-    % \textbf{Morisien}
-    % \begin{itemize}
-    %     \item "enn missier p craze simin avec so machine craz roche"
-    % \end{itemize}
-    % \textbf{Vietnamese}
-    % \begin{itemize}
-    %     \item "Một công nhân xây dựng đang làm việc với một búa khoan."
-    %     \item "Anh ấy đang phá dỡ đường"
-    % \end{itemize}
-    % \textbf{Chinese}
-    % \begin{itemize}
-    %     \begin{CJK*}{UTF8}{gbsn}
-    %     \item "一名工人正在拆除房屋前面的水泥路面"
-    %     \clearpage\end{CJK*}
-    % \end{itemize}
-    \end{minipage}
 \end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Language Ambiguity a Limitation?}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentLimitation.png} 
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Language Ambiguity a Potential?}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/CRAMT-Tool-WordAlignmentLimitationExample.png} 
+    \end{figure}
+\end{frame}
+
 
 \begin{frame}[fragile]
 	\frametitle{MT Evaluation - BLEU}
