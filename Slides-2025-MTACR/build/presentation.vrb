@@ -1,0 +1,5 @@
+\frametitle{MT Evaluation - TER}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\textwidth]{images/ChameleonMT-EVAL-TER.png}
+    \end{figure}

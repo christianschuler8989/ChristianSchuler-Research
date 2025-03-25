@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Preface}{2}{0}{1}
+\beamer@sectionintoc {2}{Bachelor}{3}{0}{2}
+\beamer@sectionintoc {3}{Master}{7}{0}{3}
+\beamer@sectionintoc {4}{Projects}{11}{0}{4}
+\beamer@sectionintoc {5}{Current Work}{18}{0}{5}
+\beamer@sectionintoc {7}{Appendix}{25}{0}{6}
